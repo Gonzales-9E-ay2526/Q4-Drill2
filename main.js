@@ -1,9 +1,9 @@
 function checkHeat() {
-    
     let temperature = Number(document.getElementById("temp").value);
     let humidity = Number(document.getElementById("hum").value);
     let ans = document.getElementById("Ans");
     let heatIndex = temperature + (0.33 * humidity) - 4;
+
     let status = "";
     let description = "";
 
@@ -12,7 +12,7 @@ function checkHeat() {
             return;
         }
 
-        if (heatIndex <= 25) {
+        if (heatIndex <= 27) {
             status = "Comfortable";
         } 
         else if (heatIndex >= 28 && heatIndex <= 32) {
